@@ -1,0 +1,138 @@
+a:link, .link{
+    color: #999999;
+    text-decoration:none;
+}
+
+.heading{
+	padding-top:10px;
+	text-align:start;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.hidden{
+  display:none;
+}
+
+/*----------------------------------------------------------------------------*/
+/* facetted browsing */
+
+.teiFacetTitle{
+    padding-top: 10px;
+    font-size:100%;
+    font-weight:bold;
+    display: block;
+}
+
+.teiFacetValues{
+    border: 1px solid lightgrey;
+    height: 100;
+    font-size:120% !important;
+}
+
+.teiFacetTable{
+    font-size:80%;
+    border-spacing: 0px;
+    border: 0pt none;
+    width: 100%;
+    margin: 0px;
+}
+
+.teiFacetTable tr{
+    line-height: 1em;
+}
+.teiFacetTable tr:hover{
+    background-color: #CCCCCC;
+}
+
+.teiFacetValue:nth-child(2n){
+    background-color: #F0F0F0;
+}
+.teiFacetValue:nth-child(2n+1){
+    background-color: #FFFFFF;
+}
+
+.teiFacetValueData{
+    padding-left: 6px;
+}
+.teiFacetValueCheck{
+    text-align: right;
+    padding-top: 2px;
+    padding-right: 2px;
+}
+
+.teiFacetSizer{
+    text-align: center;
+    padding: 0 0 10 0;
+}
+
+/* Bibliography items */
+
+.biblLink{
+  padding-left: 20px;
+}
+
+.biblLink img{
+  height: 20px;
+}
+
+.inlineElm{
+  margin-right:20px;
+}
+
+.resultContainer{
+  padding-top:20px;
+}
+
+.dareTabs{
+  display:none;
+  border-spacing:0px;
+}
+
+.biblFacetCol{
+    padding-right: 20px;
+}
+
+#biblResultCount{
+    font-size:100%;
+}
+
+#biblResultCountNumber{
+    font-size:120%;
+    font-weight:bold;
+}
+
+.biblFacet{
+    width: 320px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+#biblResults{
+    font-family: "Palatino Linotype","Book Antiqua","Palatino",serif;
+    font-size: 1.2em !important;
+}
+
+.biblPub{
+     margin-top: 20px;
+}
+
+.biblTitle{
+  font-weight: bold;
+}
+
+.biblKeys{
+
+}
+
+#biblTextInput{
+    width: 250px;
+}
+
+/*----------------------------------------------------------------------------*/
+/* search */
+
+.searchResultItem{
+  margin:10px 0px;
+  clear:both;
+}

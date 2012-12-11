@@ -1,0 +1,4 @@
+package=DAREModules
+name = darebibliography
+description = The Dare Bibliography module.
+core = 6.x
