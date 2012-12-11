@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Averroes Bibliography</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>DARE Project 2010</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listBibl>
+        <biblStruct n="1">
+          <analytic>
+            <author>
+              <surname>Acosta Rodríguez</surname>
+              <forename>Juan</forename>
+            </author>
+            <title level="a" type="main">El averroismo de Juan de Secheville</title>
+          </analytic>
+          <monogr n="1">
+            <title level="j" type="main">Logos</title>
+            <title level="j" type="sub">Revista de Filosofía</title>
+            <imprint>
+              <biblScope type="vol">18</biblScope>
+              <date when-iso="1990">1990</date>
+            </imprint>
+            <biblScope type="pp">9–31</biblScope>
+          </monogr>
+          <note type="lang">spa</note>
+          <note type="tags">Averroism</note>
+          <note type="ref_type">article</note>
+        </biblStruct>
+     </listBibl>
+      <p>Some text here.</p> 
+    </body>
+  </text>
+</TEI>

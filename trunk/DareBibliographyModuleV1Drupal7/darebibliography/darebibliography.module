@@ -1,0 +1,49 @@
+<?php
+function darebibliography_menu()
+{
+	$items = array();
+	$items['darebibliography'] = array(
+		'title' => t('The Dare Bibliography module'),
+		'page callback' => 'darebibliography_page',
+		'page arguments' => array(1),
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK,
+		);
+	return $items;
+}
+
+function darebibliography_help($path, $arg) 
+{
+	$output = '';  //declare your output variable
+	switch ($path) {
+		case "admin/help#darebibliography":
+		$output = '<p>'.  t("Das Modul lädt die dlBibliothek Scripte und führt diese aus") .'</p>';
+		break;
+	}
+	return $output;
+} // function testmodul_help
+
+function darebibliography_page($argument) 
+{
+	if ($_GET['q'] == 'darebibliography') 
+	{
+		drupal_add_js(drupal_get_path('module', 'darebibliography') .'/jquery-1.8.2.min.js');
+		drupal_add_js(drupal_get_path('module', 'darebibliography') .'/jquery-ui-1.8.24.custom.min.js');
+		drupal_add_js(drupal_get_path('module', 'darebibliography') .'/dlBibliography.js');
+		drupal_add_js(drupal_get_path('module', 'darebibliography') .'/dlFacets.js');
+		drupal_add_js(drupal_get_path('module', 'darebibliography') .'/dlBasics.js');
+		drupal_add_js(drupal_get_path('module', 'darebibliography') .'/dlConfig.js');
+		drupal_add_css(drupal_get_path('module', 'darebibliography') .'/darebibliography.css', 'theme', 'all');
+		//$vars['scripts'] = drupal_get_js(); 
+	}
+	
+	$divtag = "<div id=\"fullBoxContent\"></div>";
+	$scriptbefehle = "<script type=\"text/javascript\">dareBiblTEI='";
+	
+	$pfad = "/modules/darebibliography/";
+	$name = "bibliography.xml";
+	
+	$restscriptbefehle = "';loadBibliography();</script>";
+	$output = $divtag.$scriptbefehle.$pfad.$name.$restscriptbefehle;
+    return $output.$argument;
+}
